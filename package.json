@@ -1,0 +1,23 @@
+{
+  "name": "modella-nedb",
+  "version": "0.0.1",
+  "description": "NeDB persistence adapter for modella",
+  "keywords": ["nedb", "modella"],
+  "author": "Luke Vivier <luke@vivier.ca>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lvivier/modella-nedb.git"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "nedb": "^0.11.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "modella": "^0.2.12"
+  }
+}
