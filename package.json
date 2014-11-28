@@ -1,6 +1,6 @@
 {
   "name": "modella-nedb",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "NeDB persistence adapter for modella",
   "keywords": ["nedb", "modella"],
   "author": "Luke Vivier <luke@vivier.ca>",
