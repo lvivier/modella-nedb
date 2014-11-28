@@ -1,11 +1,13 @@
 
 # modella-nedb
 
-[NeDB][ne] persistence for modella.
+[NeDB][ne] persistence for [modella][mo].
 
 NeDB is a tiny embedded database, written in JavaScript, with a
 MongoDB-like API. It's ideal for prototyping, microservices, and
 desktop/CLI applications, and has a human-readable file format.
+
+Modella is simple, extensible no-BS models for browser and server.
 
 
 ## Install
@@ -123,5 +125,6 @@ Execute the query and call `fn` with the results.
 
 MIT
 
+[mo]:https://github.com/modella/modella
 [ne]:https://github.com/louischatriot/nedb
 [doc]:https://github.com/louischatriot/nedb#creatingloading-a-database
