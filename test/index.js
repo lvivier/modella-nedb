@@ -53,6 +53,15 @@ test('Datastore exposed at Model.db', function(){
   assert(User.db instanceof Datastore)
 })
 
+test('Can BYO Datastore', function(){
+  var db = new Datastore()
+  var plugin = nedb(db)
+  var Fixture = model('Fixture')
+
+  plugin(Fixture)
+  assert(db === Fixture.db)
+})
+
 suite('Model.save')
 
 test('Saves a model', function(done){

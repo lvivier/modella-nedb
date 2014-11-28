@@ -39,6 +39,23 @@ User
 
 ## API
 
+### plugin(opts)
+
+Call the module function with `opts` to return a plugin. `opts` can be
+an object, a string file path, or an NeDB `Datastore` instance. Valid
+options are [described in the NeDB docs](doc).
+
+Called without any options, the datastore will be in-memory, with no
+persistence.
+
+```js
+var plugin = require('modella-nedb')
+// all legit
+plugin('./user.db')
+plugin({filename:'./user.db'})
+plugin(new Datastore('./user.db'))
+```
+
 ### Model#save(cb)
 
 Saves a model's properties to disk and calls `cb`.
@@ -107,3 +124,4 @@ Execute the query and call `fn` with the results.
 MIT
 
 [ne]:https://github.com/louischatriot/nedb
+[doc]:https://github.com/louischatriot/nedb#creatingloading-a-database
